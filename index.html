@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+function random_item(items)
+{
+  
+return items[Math.floor(Math.random()*items.length)];
+     
+}
+async function getItYea() {
+	const url1 = 'https://raw.githubusercontent.com/grumd/osu-pps/develop/data/ranking/osu/map-infos.json';
+	const response = await fetch(url1);
+	const data = await response.text();
+	const mapList = data.split('","');
+	var picked = random_item(mapList);
+	var PickedID = picked.replace(/\D/g,'');
+	
+	console.log(picked);
+	document.write(picked.link("https://osu.ppy.sh/beatmaps/" + PickedID));
+}
+getItYea();
+</script>
