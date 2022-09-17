@@ -652,7 +652,7 @@
 }
 
 .markdown-body table tr {
-  background-color: #0B2647;
+  background-color: #0077ff;
   border-top: 1px solid hsla(210,18%,87%,1);
 }
 
@@ -842,7 +842,7 @@
 .markdown-body .csv-data .blob-num {
   padding: 10px 8px 9px;
   text-align: right;
-  background: #0B2647;
+  background: #0077ff;
   border: 0;
 }
 
